@@ -23,10 +23,13 @@ app.get("/welcome", (req, res) => {
     })
 })
 
-app.get("/", (res,res) => {
+app.get("/", (req, res) => {
     res.send("hare krishan");
 })
 
+app.get("/inserted", (req, res) => {
+    res.send("inserted backend branch feature")
+})
 const PORT = process.env.PORT || 3000;
 
 app.listen(PORT, () => {
