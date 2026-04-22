@@ -23,6 +23,10 @@ app.get("/welcome", (req, res) => {
     })
 })
 
+app.get("/", (res,res) => {
+    res.send("hare krishan");
+})
+
 const PORT = process.env.PORT || 3000;
 
 app.listen(PORT, () => {
